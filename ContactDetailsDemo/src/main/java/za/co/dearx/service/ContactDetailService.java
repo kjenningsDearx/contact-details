@@ -13,10 +13,6 @@ public class ContactDetailService {
 		// TODO Auto-generated constructor stub
 	};
 
-//	public List<ContactDetailDTO> getAllContactDetails(){
-//		return 
-//	}
-//	
 	public ContactDetailDTO getContactDetail(int id) {
 		return new ContactDetailDTO(id);
 	}

@@ -18,15 +18,6 @@ public class ContactDetailResource {
 	
 	private ContactDetailService contactDetailService;
 	
-//	@GetMapping("/contact-details")
-//	public ResponseEntity<List<ContactDetailDTO>> getAllContactDetail(){
-//		
-//		List<ContactDetailDTO> result = 
-//		
-//		return null;
-//		
-//	}
-	
 	@GetMapping("/contact-detail/{id}")
 	public ContactDetailDTO getAllContactDetail(@RequestParam int id){
 		return contactDetailService.getContactDetail(id);
