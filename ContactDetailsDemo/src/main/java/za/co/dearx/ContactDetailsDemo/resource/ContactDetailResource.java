@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ContactDetailResource {
 	
-	@GetMapping("/test")
-	public String greeting() {
-		return "Hello, testing 123";
+	@GetMapping("/test1")
+	public ResponseEntity<String> greeting() {
+		return ResponseEntity.ok("Working");
 	}
 }
