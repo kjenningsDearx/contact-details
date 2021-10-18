@@ -1,4 +1,4 @@
-package za.co.dearx.repository;
+package za.co.dearx.ContactDetailsDemo.repository;
 
 import org.springframework.stereotype.Repository;
 

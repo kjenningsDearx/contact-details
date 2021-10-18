@@ -1,10 +1,10 @@
-package za.co.dearx.service;
+package za.co.dearx.ContactDetailsDemo.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import za.co.dearx.dto.ContactDetailDTO;
+import za.co.dearx.ContactDetailsDemo.dto.ContactDetailDTO;
 
 @Service
 public class ContactDetailService {

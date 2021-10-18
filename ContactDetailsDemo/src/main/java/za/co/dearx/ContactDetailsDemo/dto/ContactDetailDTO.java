@@ -1,6 +1,18 @@
-package za.co.dearx.domain;
+package za.co.dearx.ContactDetailsDemo.dto;
 
-public class ContactDetail {
+public class ContactDetailDTO {
+
+	public ContactDetailDTO(int id) {
+		this.id = id;
+		firstName = "David";
+		lastName = "Smith";
+		cellPhoneNumber = "0767947721";
+		emailAddress = "dSmith@gmail.com";
+		physicalAddressLine1 = "73 Baumont Street";
+		physicalAddressLine2 = "Claremont";
+		physicalAddressLine3 = "Cape Town";
+		postalCode = "7976";
+	}
 
 	private int id;
 	
@@ -8,7 +20,7 @@ public class ContactDetail {
 	
 	private String lastName;
 	
-	private int cellPhoneNumber;
+	private String cellPhoneNumber;
 	
 	private String emailAddress;
 	
@@ -18,7 +30,7 @@ public class ContactDetail {
 	
 	private String physicalAddressLine3;
 	
-	private int postalCode;
+	private String postalCode;
 
 	public String getFirstName() {
 		return firstName;
@@ -36,11 +48,11 @@ public class ContactDetail {
 		this.lastName = lastName;
 	}
 
-	public int getCellPhoneNumber() {
+	public String getCellPhoneNumber() {
 		return cellPhoneNumber;
 	}
 
-	public void setCellPhoneNumber(int cellPhoneNumber) {
+	public void setCellPhoneNumber(String cellPhoneNumber) {
 		this.cellPhoneNumber = cellPhoneNumber;
 	}
 
@@ -76,11 +88,11 @@ public class ContactDetail {
 		this.physicalAddressLine3 = physicalAddressLine3;
 	}
 
-	public int getPostalCode() {
+	public String getPostalCode() {
 		return postalCode;
 	}
 
-	public void setPostalCode(int postalCode) {
+	public void setPostalCode(String postalCode) {
 		this.postalCode = postalCode;
 	}
 
@@ -95,5 +107,4 @@ public class ContactDetail {
 				+ ", physicalAddressLine2=" + physicalAddressLine2 + ", physicalAddressLine3=" + physicalAddressLine3
 				+ ", postalCode=" + postalCode + "]";
 	}
-	
 }
