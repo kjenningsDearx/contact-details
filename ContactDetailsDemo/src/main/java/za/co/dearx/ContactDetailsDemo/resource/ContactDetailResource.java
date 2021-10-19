@@ -15,7 +15,9 @@ public class ContactDetailResource {
 
 	/*
 	*Error 400 part of the 4XX request 
+	*with @RequestMapping("/api")
 	*Curl test: curl  http://localhost:8080/api/badRequest -v
+	*Curl test: curl  http://localhost:8080/badRequest -v without @RequestMapping("/api")
 	*/
 	@GetMapping("/badRequest")
 	public ResponseEntity<String> badRequest() {
